@@ -1,3 +1,263 @@
-h1{
-    color: pink;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS reset end*/
+
+/*預設格式*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle; /*消除圖片空白*/
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.container{
+    width: 1296px;
+    margin: 0 auto;
+}
+.intro{
+    background-image: url(./img/background-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.intro-desc{
+    width: 526px;
+}
+.contact-desc{
+    padding: 2px 0;    
+}
+.about{
+    padding: 160px 0;
+}
+.project{
+    padding: 160px 0;
+}
+.project-title{
+    width: 746px;
+    margin-left: auto;
+}
+.w636{
+    width: 636px;
+}
+
+.font-bruno{
+    font-family: "Bruno Ace SC", sans-serif;
+    color: white;
+}
+.font-color-black{
+    color: black;
+}
+.font-16{
+    font-size: 16px;
+}
+
+.font-64{
+    font-size: 64px;
+}
+.font-128{
+    font-size: 128px;
+    color: #00FFA3;
+    
+}
+
+.background-black{
+    background-color: black;
+}
+.contact{
+    background: linear-gradient(rgba(5, 0, 20, 1), rgba(1, 2, 30, 0.89));
+    padding: 96px 0;
+}
+.dp-flx{
+    display: flex;
+}
+
+.p-40{
+    padding: 40px 0;   
+}
+
+.flex-colum{
+    flex-direction: column;
+}
+
+.ais{
+    align-items: start;
+}
+
+.p-96{
+    padding: 96px 0;   
+}
+.mr20{
+    margin-right: 20px;
+}
+
+.mr24{
+    margin-right: 24px;
+}
+.mt36{
+    margin-top: 36px;
+}
+.mt72{
+    margin-top: 72px;
+}
+
+.ml24{
+    margin-left: 24px;
+}
+.mb4{
+    margin-bottom: 4px;
+}
+
+.mb16{
+    margin-bottom: 16px;
+}
+.mb24{
+    margin-bottom: 24px;
+}
+.mb32{
+    margin-bottom: 32px;
+}
+
+.pb32{
+    padding-bottom: 32px;
+}
+
+.dp-blk{
+    display: block;
+    text-align: right;
+}
+.people{
+    width: 646px;
+}
+.btn{
+    border-radius: 32px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+}
+
+.btn-dark{
+    background: #000;
+    color: white;
+}
+
+.jce{
+    justify-content: end;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+
+.alt_start{
+    align-items: start;
+}
+
+.alt_center{
+    align-items: center;
+}
+.about-list{
+    width: 636px;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    gap: 24px;
+}
+.about-list li{
+    width: calc(50% - 12px);
+    font-size: 20px;
+    padding: 16px;
+    border: #E3E3E3 1px solid;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.08);
+}
+.about-desc{
+    width: 526px;
+}
+
+.social-link{
+    
+    border-radius: 40px;
+}
+.social-link:hover{
+    box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+    transition: 0.3s;
+}
+.gap24{
+    gap: 24px;
+}
+
+.mt28{
+    margin-top: 28px;
+}
+
+.footer{
+    background: #000;
+    
+}
+
+.reg{
+    padding: 40px 0;
+    margin: 0 auto;
 }
